@@ -19,20 +19,14 @@ public class Main {
         
         //Exercise 1
         System.out.print("What day is it today? ");
-        while(sc.hasNextLine()){
-            String answer=sc.nextLine().toUpperCase();
-            day.howManyDays(Friday.DaysOfWeek.valueOf(answer));
-        }
+        String answer=sc.nextLine().toUpperCase();
+        day.howManyDays(Friday.DaysOfWeek.valueOf(answer));
         
         //Exercise 2
         System.out.print("Operand 1: ");
-        while(sc.hasNextLine()){
-            o1=Integer.parseInt(sc.nextLine());
-        }
+        o1=Integer.parseInt(sc.nextLine());
         System.out.print("Operand 2: ");
-        while(sc.hasNextLine()){
-            o2=Integer.parseInt(sc.nextLine());
-        }
+        o2=Integer.parseInt(sc.nextLine());
         operation.calculate(MathOperators.MathOperator.PLUS, o1, o2);
         operation.calculate(MathOperators.MathOperator.MINUS, o1, o2);
         operation.calculate(MathOperators.MathOperator.MULTIPLY, o1, o2);
